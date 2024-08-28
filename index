@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="myStyle.css" rel="stylesheet" type="text/css"/>
+    <title>Formulario Registro Usuarios Disquera</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logotipo" src="imagenes/senijarecords.png" alt="logotipo de senija records">
+        <h1 class="titulo">REGISTRO DE USUARIOS</h1>
+    </header>
+    <main>
+        <form action="miServlet" method="POST">
+            <div class="registro">
+                <div class="container">
+                    <label for="nombre" class="text">Nombre:</label>
+                    <input type="text" placeholder="Escribe aquí..." name="nombre" class="input">
+                    <label for="apellido" class="text">Apellido:</label>
+                    <input type="text" placeholder="Escribe aquí..." name="apellido" class="input">
+                    <label for="usuario" class="text">Usuario:</label>
+                    <input type="text" placeholder="Escribe aquí..." name="apellido" class="input">
+                    <label for="correo" class="text">Correo:</label>
+                    <input type="text" placeholder="Escribe aquí..." name="apellido" class="input">
+                    <label for="contra" class="text">Contraseña:</label>
+                    <input type="password" placeholder="Escribe aquí..." name="apellido" class="input">
+                </div>
+                <div class="botones">
+                    <button type="submit" class="btn registro" name="Registro">REGISTRAR</button>
+                    <button type="button" class="btn cancelar">CANCELAR</button>
+                </div>
+            </div>   
+        </form>     
+    </main>
+    <footer class="footer">
+        <a class="link" href="https://github.com/Thowers/Guia2TP.git">
+            <img class="github" src="imagenes/github.png" alt="logo de github">GitHub</a> 
+    </footer>
+</body>
+</html>
