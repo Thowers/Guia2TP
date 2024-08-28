@@ -1,1 +1,7 @@
-documento de prueba
+<h1>Documendo README de la guia 2 de Taller de programacion</h1>
+
+- Se agregan index de 3 interfaces.
+
+- indexRegistro e indexConfirmacion son las interfaces del punto numero 2 de la guia.
+
+- indexLogin, son las interfaces de el primer punto.
