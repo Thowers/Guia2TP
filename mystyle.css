@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+:root{
+    --primer-color:#FFFFFF;
+    --segundo-color:#C1121F;
+    --maindark:#171717;
+    --cuarto-color:#003049;
+    --quinto-color:#669BBC;
+    --fuente-base:"Roboto", sans-serif;
+    --peso-fuente:600;
+    --estilo-fuente:normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuente-base);
+    font-weight: var(--peso-fuente);
+    font-style: var(--normal);
+    background: var(--maindark);
+    
+}
+
+/** ----------------- CODIGO DE REGISTRO ----------------------- **/
+
+.header_registro{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.logotipo_registro{
+    width: 25rem;
+    padding: 1rem 0rem 1rem 0rem ;
+}
+
+.main_registro{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.titulo_registro{
+    background-color: var(--maindark);
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container_registro{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 300px;
+}
+
+.container_registro label.text_registro {
+    font-size: 1.0rem;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: var(--maindark);
+    width: fit-content;
+}
+
+.container_registro input[type=text].input_registro {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    background: var(--maindark);
+}
+
+.container_registro input[type=text].input_registro:focus {
+    outline: none;
+}
+
+.container_registro input[type=password].input_registro {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    background: var(--maindark);
+}
+
+.container_registro input[type=pssword].input_registro:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btnregistro_registro, .btncancelar_registro{
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #FFFFFF;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.btnregistro_registro::before, .btncancelar_registro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #515151;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+.btnregistro_registro:hover, .btncancelar_registro:hover {
+    color: #e8e8e8;
+}
+
+.btnregistro_registro:hover::before, .btncancelar_registro:hover::before {
+    width: 100%;
+}
+
+.btnregistro_registro{
+    background-color: var(--quinto-color);
+}
+
+.btncancelar_registro{
+    background-color: var(--segundo-color);
+}
+
+.footer{
+    background-color: var(--primer-color);
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--quinto-color);
+    background-color: transparent;
+}
+
+.github, .github2{
+    background-color: transparent;
+}
+
+.footer2{
+    background-color: var(--primer-color);
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/** --------------------- CODIGO DE LOGIN ------------------------ **/
+
+.body_login{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    position: relative;
+}
+
+.logo_login {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 100px;
+    top: -35%;
+    z-index: 1;
+    transition: transform .4s ease-in-out;
+    border: 5px solid transparent;
+    filter: none;
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 250px;
+    padding: 2em;
+    background-color:#1f1e1e;
+    border-radius: 25px;
+    position: relative; 
+    transition: transform .4s ease-in-out;
+    filter: none;
+}
+
+.form_login:hover .logo_login{
+    border: 5px solid var(--quinto-color);
+}
+
+.form_login:hover{
+    transform: scale(1.1);
+    border: 5px solid var(--quinto-color);
+}
+
+.titulo_login{
+    text-align: center;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.campo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.text_login{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.form_login .btn_login{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+.btn_inicio{
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: var(--cuarto-color);
+    color: white;
+}
+
+.btn_inicio:hover{
+    background-color: var(--quinto-color);
+    color:white;
+}
+
+.btn_signup{
+    padding: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: var(--cuarto-color);
+    color: white;
+}
+
+.btn_signup:hover{
+    background-color: var(--quinto-color);
+    color: white;
+}
+
+.btn_olvidepsw{
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: var(--cuarto-color);
+    color: white;
+}
+
+.btn_olvidepsw:hover{
+    background-color: red;
+    color: white;
+}
+
+.footer_login{
+    background-color: var(--primer-color);
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
